@@ -1,8 +1,9 @@
-import React from "react";
-import "./contact.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import './contact.css';
+import PropTypes from 'prop-types';
+import Contactlist from './contactlist.js'
 
-const users = [
+/*const users = [
   {
     name: "Pikachu on Acid",
     avatar:
@@ -21,7 +22,7 @@ const users = [
       "https://styles.redditmedia.com/t5_3hvpn/styles/communityIcon_9wfc0j4n9i331.png?width=256&s=5dd2688b4cd9e4ebe77f97fc4a3ed5c3fc1ca2de",
     online: true
   }
-];
+];*/
 
 const Contact = (props) => {
   return (
@@ -47,15 +48,3 @@ Contact.propTypes = {
   };
 
 
-function ContactList(props) {
-  return (
-    <div>
-      {users.map((item) => (
-        <Contact image={item.avatar} name={item.name} status={item.online} />
-      ))}
-    </div>
-  );
-}
-
-// export default Contact;
-export default ContactList;
