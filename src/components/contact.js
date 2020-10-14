@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import PropTypes from "prop-types";
 
 const users = [
   {
@@ -38,6 +39,13 @@ const Contact = (props) => {
     </div>
   );
 };
+
+Contact.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    online: PropTypes.string.isRequired
+  };
+
 
 function ContactList(props) {
   return (
